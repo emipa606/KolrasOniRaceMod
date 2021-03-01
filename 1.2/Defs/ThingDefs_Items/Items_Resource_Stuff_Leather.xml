@@ -1,0 +1,57 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_RedOni</defName>
+    <label>RedOni leather</label>
+    <description>Tanned, dried, scraped Red Oni skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+    <graphicData>
+      <color>(170, 50, 60)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.2</MarketValue>
+      <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(170, 50, 60)</color>
+      <commonality>0.0025</commonality>
+    </stuffProps>
+  </ThingDef>
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_BlueOni</defName>
+    <label>BlueOni leather</label>
+    <description>Tanned, dried, scraped Blue Oni skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+    <graphicData>
+      <color>(100, 120, 215)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.2</MarketValue>
+      <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(100, 120, 215)</color>
+      <commonality>0.0025</commonality>
+    </stuffProps>
+  </ThingDef>
+  <ThingDef ParentName="LeatherBase">
+    <defName>Leather_GreenOni</defName>
+    <label>GreenOni leather</label>
+    <description>Tanned, dried, scraped Green Oni skin. Most people find this material horrifying. Some find it fascinating. While a decent leather, it neither protects nor insulates particularly well.</description>
+    <graphicData>
+      <color>(170, 210, 100)</color>
+    </graphicData>
+    <statBases>
+      <MarketValue>5.2</MarketValue>
+      <StuffPower_Armor_Sharp>0.64</StuffPower_Armor_Sharp>
+      <StuffPower_Insulation_Cold>20</StuffPower_Insulation_Cold>
+      <StuffPower_Insulation_Heat>20</StuffPower_Insulation_Heat>
+    </statBases>
+    <stuffProps>
+      <color>(170, 210, 100)</color>
+      <commonality>0.0025</commonality>
+    </stuffProps>
+  </ThingDef>
+</Defs>

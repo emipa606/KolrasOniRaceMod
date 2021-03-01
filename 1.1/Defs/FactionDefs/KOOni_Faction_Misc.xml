@@ -1,0 +1,175 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <FactionDef Name="KOniFactionBase" Abstract="True">
+    <goodwillDailyGain>0.20</goodwillDailyGain>
+    <goodwillDailyFall>0.40</goodwillDailyFall>
+  </FactionDef>
+  <FactionDef ParentName="KOniFactionBase" Name="KOniTribeBase" Abstract="True">
+    <pawnSingular>Oni</pawnSingular>
+    <pawnsPlural>Oni</pawnsPlural>
+    <listOrderPriority>20</listOrderPriority>
+    <settlementGenerationWeight>1</settlementGenerationWeight>
+    <requiredCountAtGameStart>1</requiredCountAtGameStart>
+    <canMakeRandomly>true</canMakeRandomly>
+    <canStageAttacks>true</canStageAttacks>
+    <factionIconPath>World/OniIcon</factionIconPath>
+    <geneticVariance>0.1</geneticVariance>
+    <factionNameMaker>NamerFactionTribal</factionNameMaker>
+    <settlementNameMaker>NamerSettlementTribal</settlementNameMaker>
+    <pawnNameMaker>NamerPersonTribal</pawnNameMaker>
+    <techLevel>Neolithic</techLevel>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+    <leaderTitle>Oni_Chief</leaderTitle>
+    <hairTags>
+      <li>KOni</li>
+    </hairTags>
+    <raidCommonalityFromPointsCurve>
+      <points>
+        <li>(0, 1)</li>
+        <!--Constant 1 at all points levels-->
+      </points>
+    </raidCommonalityFromPointsCurve>
+    <caravanTraderKinds>
+      <li>Caravan_Neolithic_BulkGoods</li>
+      <li>Caravan_Neolithic_WarMerchant</li>
+      <li>Caravan_Neolithic_Slaver</li>
+      <li>Caravan_Neolithic_ShamanMerchant</li>
+    </caravanTraderKinds>
+    <visitorTraderKinds>
+      <li>Visitor_Neolithic_Standard</li>
+    </visitorTraderKinds>
+    <baseTraderKinds>
+      <li>Base_Neolithic_Standard</li>
+    </baseTraderKinds>
+    <allowedArrivalTemperatureRange>
+      <min>-40</min>
+      <max>45</max>
+    </allowedArrivalTemperatureRange>
+    <maxPawnCostPerTotalPointsCurve>
+      <points>
+        <li>(0,35)</li>
+        <li>(70, 50)</li>
+        <li>(800, 100)</li>
+        <li>(1300, 150)</li>
+        <li>(100000, 10000)</li>
+      </points>
+    </maxPawnCostPerTotalPointsCurve>
+    <pawnGroupMakers>
+      <li>
+        <!-- Normal fights, ranged with melee mix-ins -->
+        <kindDef>Combat</kindDef>
+        <commonality>100</commonality>
+        <options>
+          <RedOni_Warrior>5</RedOni_Warrior>
+          <GreenOni_Archer>10</GreenOni_Archer>
+          <GreenOni_Hunter>10</GreenOni_Hunter>
+          <BlueOni_HeavyArcher>10</BlueOni_HeavyArcher>
+          <RedOni_Berserker>5</RedOni_Berserker>
+          <BlueOni_ChiefRanged>3</BlueOni_ChiefRanged>
+          <RedOni_ChiefMelee>1.5</RedOni_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, ranged only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <GreenOni_Archer>10</GreenOni_Archer>
+          <GreenOni_Hunter>10</GreenOni_Hunter>
+          <BlueOni_HeavyArcher>10</BlueOni_HeavyArcher>
+          <BlueOni_ChiefRanged>5</BlueOni_ChiefRanged>
+        </options>
+      </li>
+      <li>
+        <!-- Normal fights, melee only -->
+        <kindDef>Combat</kindDef>
+        <commonality>60</commonality>
+        <options>
+          <RedOni_Warrior>12</RedOni_Warrior>
+          <RedOni_Berserker>12</RedOni_Berserker>
+          <RedOni_ChiefMelee>7</RedOni_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <!-- Peaceful -->
+        <kindDef>Peaceful</kindDef>
+        <options>
+          <RedOni_Warrior>20</RedOni_Warrior>
+          <GreenOni_Archer>10</GreenOni_Archer>
+          <GreenOni_Hunter>10</GreenOni_Hunter>
+          <BlueOni_HeavyArcher>10</BlueOni_HeavyArcher>
+          <RedOni_Berserker>5</RedOni_Berserker>
+          <BlueOni_ChiefRanged>3</BlueOni_ChiefRanged>
+          <RedOni_ChiefMelee>1.5</RedOni_ChiefMelee>
+        </options>
+      </li>
+      <li>
+        <kindDef>Trader</kindDef>
+        <traders>
+          <GreenOni_Trader>1</GreenOni_Trader>
+        </traders>
+        <carriers>
+          <Muffalo>6</Muffalo>
+          <Dromedary>5</Dromedary>
+          <Alpaca>2.5</Alpaca>
+          <Elephant>2</Elephant>
+        </carriers>
+        <guards>
+          <RedOni_Warrior>7</RedOni_Warrior>
+          <GreenOni_Archer>10</GreenOni_Archer>
+          <GreenOni_Hunter>10</GreenOni_Hunter>
+          <BlueOni_HeavyArcher>10</BlueOni_HeavyArcher>
+          <RedOni_Berserker>7</RedOni_Berserker>
+        </guards>
+      </li>
+      <li>
+        <kindDef>Settlement</kindDef>
+        <options>
+          <RedOni_Warrior>7</RedOni_Warrior>
+          <GreenOni_Archer>10</GreenOni_Archer>
+          <GreenOni_Hunter>10</GreenOni_Hunter>
+          <BlueOni_HeavyArcher>10</BlueOni_HeavyArcher>
+          <RedOni_Berserker>7</RedOni_Berserker>
+          <BlueOni_ChiefRanged>10</BlueOni_ChiefRanged>
+        </options>
+      </li>
+    </pawnGroupMakers>
+    <settlementTexturePath>World/WorldObjects/DefaultSettlement</settlementTexturePath>
+  </FactionDef>
+  <FactionDef ParentName="KOniTribeBase">
+    <defName>KO_Oni_Peaceful_Tribe</defName>
+    <label>Peaceful Oni Tribe</label>
+    <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe pursues a gentle way of life where they can. They are quite open to trade and alliances, even with strange peoples.</description>
+    <colorSpectrum>
+      <li>(100,120,215)</li>
+      <li>(100,120,215)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>-0</min>
+      <max>10</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-50</min>
+      <max>100</max>
+    </naturalColonyGoodwill>
+  </FactionDef>
+  <FactionDef ParentName="KOniTribeBase">
+    <defName>KO_Oni_Savage_Tribe</defName>
+    <label>Savage Oni Tribe</label>
+    <description>These people have been here a very long time. Maybe their ancestors crashed here a thousand years ago. Maybe they survived some cataclysm that destroyed a technological civilization here. In any case, the tribals are mostly nomadic people who live off the land using primitive tools and weapons.\n\nDespite their apparent technological weakness, the tribals can be dangerous enemies and valuable friends because of their skill with low-tech warfare, their numbers, and their hardiness.\n\nThis particular tribe values warlike dominance; it may be difficult to turn them into an ally.</description>
+    <colorSpectrum>
+      <li>(170,50,60)</li>
+      <li>(170,50,60)</li>
+    </colorSpectrum>
+    <startingGoodwill>
+      <min>-50</min>
+      <max>-20</max>
+    </startingGoodwill>
+    <naturalColonyGoodwill>
+      <min>-100</min>
+      <max>-80</max>
+    </naturalColonyGoodwill>
+  </FactionDef>
+</Defs>

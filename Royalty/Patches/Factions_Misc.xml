@@ -1,0 +1,12 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Patch>
+  <Operation Class="PatchOperationAdd">
+    <xpath>Defs/FactionDef[defName="Empire"]/permanentEnemyToEveryoneExcept</xpath>
+    <value>
+      <li>KO_Oni_Peaceful_Tribe</li>
+      <li>GreenOniPlayerTribe</li>
+      <li>RedOniPlayerTribe</li>
+      <li>BlueOniPlayerTribe</li>
+    </value>
+  </Operation>
+</Patch>

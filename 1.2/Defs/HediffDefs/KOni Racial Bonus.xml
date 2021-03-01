@@ -1,0 +1,43 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <HediffDef Name="KOni_RacialBase" Abstract="True">
+    <hediffClass>HediffWithComps</hediffClass>
+    <defaultLabelColor>(170, 210, 100)</defaultLabelColor>
+    <initialSeverity>0.0</initialSeverity>
+    <isBad>false</isBad>
+    <scenarioCanAdd>false</scenarioCanAdd>
+  </HediffDef>
+  <JecsTools.HediffExpandedDef ParentName="KOni_RacialBase">
+    <defName>KOniTraits</defName>
+    <label>Racial Bonus:Oni</label>
+    <description>Racial Bonus:Oni</description>
+    <postListText>Hailing from a demonic lineage make3s you stronger than other people</postListText>
+    <stages>
+      <li>
+        <capMods>
+          <li>
+            <capacity>Sight</capacity>
+            <postFactor>1.25</postFactor>
+          </li>
+          <li>
+            <capacity>Manipulation</capacity>
+            <postFactor>1.25</postFactor>
+          </li>
+          <li>
+            <capacity>Metabolism</capacity>
+            <postFactor>1.24</postFactor>
+          </li>
+        </capMods>
+      </li>
+    </stages>
+  </JecsTools.HediffExpandedDef>
+  <HediffGiverSetDef>
+    <defName>KOniTraitsGiver</defName>
+    <hediffGivers>
+      <li Class="JecsTools.HediffGiver_StartWithHediff">
+        <hediff>KOniTraits</hediff>
+        <expandedDef>KOniTraits</expandedDef>
+      </li>
+    </hediffGivers>
+  </HediffGiverSetDef>
+</Defs>
