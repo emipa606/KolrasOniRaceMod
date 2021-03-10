@@ -193,6 +193,9 @@
     </statBases>
     <equippedStatOffsets>
     </equippedStatOffsets>
+    <thingCategories Inherit="False">
+      <li>WeaponsMelee</li>
+    </thingCategories>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <stuffCategories>
       <li>Metallic</li>
@@ -257,6 +260,9 @@
     </statBases>
     <equippedStatOffsets>
     </equippedStatOffsets>
+    <thingCategories Inherit="False">
+      <li>WeaponsMelee</li>
+    </thingCategories>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <stuffCategories>
       <li>Metallic</li>

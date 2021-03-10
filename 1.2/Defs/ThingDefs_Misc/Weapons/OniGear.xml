@@ -191,6 +191,9 @@
       <WorkToMake>4000</WorkToMake>
       <Mass>2</Mass>
     </statBases>
+    <thingCategories Inherit="False">
+      <li>WeaponsMelee</li>
+    </thingCategories>
     <equippedStatOffsets>
     </equippedStatOffsets>
     <equippedAngleOffset>-65</equippedAngleOffset>
@@ -257,6 +260,9 @@
     </statBases>
     <equippedStatOffsets>
     </equippedStatOffsets>
+    <thingCategories Inherit="False">
+      <li>WeaponsMelee</li>
+    </thingCategories>
     <equippedAngleOffset>-65</equippedAngleOffset>
     <stuffCategories>
       <li>Metallic</li>
