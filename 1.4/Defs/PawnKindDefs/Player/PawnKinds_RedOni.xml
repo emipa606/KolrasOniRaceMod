@@ -1,0 +1,35 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Defs>
+  <PawnKindDef Name="BaseRedOniPawnKind">
+    <defName>RedOni</defName>
+    <label>Red Oni</label>
+    <race>Alien_RedOni</race>
+    <combatPower>40</combatPower>
+    <initialWillRange>1~3</initialWillRange>
+    <initialResistanceRange>15~24</initialResistanceRange>
+    <isFighter>false</isFighter>
+    <apparelIgnoreSeasons>true</apparelIgnoreSeasons>
+    <forceNormalGearQuality>true</forceNormalGearQuality>
+    <defaultFactionType>RedOniPlayerTribe</defaultFactionType>
+    <backstoryCategories>
+      <li>Tribal</li>
+    </backstoryCategories>
+    <apparelTags Inherit="false">
+      <li>Neolithic</li>
+    </apparelTags>
+    <apparelAllowHeadgearChance>0.5</apparelAllowHeadgearChance>
+    <apparelMoney>
+      <min>100</min>
+      <max>150</max>
+    </apparelMoney>
+    <weaponMoney>
+      <min>100</min>
+      <max>100</max>
+    </weaponMoney>
+    <weaponTags>
+      <li>KO_RangedBasic</li>
+      <li>KO_RangedAdvanced</li>
+      <li>KO_MeleeBasic</li>
+    </weaponTags>
+  </PawnKindDef>
+</Defs>
