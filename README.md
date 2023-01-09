@@ -43,3 +43,4 @@ WARNING: latest update may break old saves because i had to fix a hediffs giver 
 
 
 
+https://steamcommunity.com/sharedfiles/filedetails/changelog/2411504950]Last updated 2023-01-09
